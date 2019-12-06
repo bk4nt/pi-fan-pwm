@@ -1,0 +1,18 @@
+#! /bin/sh
+
+set -e
+
+cd "$(dirname "$0")/.."
+
+echo "=> Installing pi-fan-pwm..."
+sudo cp pi-fan-pwm.py /usr/local/bin/
+sudo chmod +x /usr/local/bin/pi-fan-pwm.py
+
+echo "=> Starting pi-fan-pwm..."
+sudo cp pi-fan-pwm.sh /etc/init.d/
+sudo chmod +x /etc/init.d/pi-fan-pwm.sh
+
+sudo update-rc.d pi-fan-pwm.sh defaults
+sudo /etc/init.d/pi-fan-pwm.sh start
+
+echo "pi-fan-pwm installed."
