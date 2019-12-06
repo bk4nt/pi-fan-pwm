@@ -10,7 +10,7 @@ Tested with Noctua NF-A4x10 5V PWM and Raspberry Pi 4.
 2. Connect fan +5V/GND to the Raspberry, fan will run at max speed
 3. Connect fan PWM pin to GPIO 18
 4. Run and tweak duty cycles plus temperature thresholds in `pi-fan-pwm.py`
+4. Use `stress-ng --cpu 4` plus `watch tools/temp.sh` to monitor your CPU temperature
 5. Run `script/install`
-6. Maybe use now `watch tools/temp.sh` to monitor your CPU temperature
 
 That's it!
