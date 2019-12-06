@@ -5,7 +5,6 @@ import time
 import signal
 import sys
 
-# Used for tests before install
 def signal_handler(sig, frame):
         tFile.close()
         fFile.close()
