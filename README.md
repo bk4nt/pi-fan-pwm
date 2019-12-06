@@ -2,7 +2,7 @@
 
 Scripts used to run a PWM fan according to Raspberry CPU temperature.
 
-Tested with Noctua NF-A4x10 5V PWM.and Raspberry Pi 4
+Tested with Noctua NF-A4x10 5V PWM and Raspberry Pi 4
 
 ## Installation
 
