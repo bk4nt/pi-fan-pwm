@@ -11,5 +11,6 @@ Tested with Noctua NF-A4x10 5V PWM and Raspberry Pi 4.
 3. Connect fan PWM pin to GPIO 18
 4. Run and tweak duty cycles plus temperature thresholds in `pi-fan-pwm.py`
 5. Run `script/install`
+6. Maybe use now `watch tools/temp.sh` to monitor your CPU temperature
 
 That's it!
