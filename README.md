@@ -9,7 +9,7 @@ Tested with Noctua NF-A4x10 5V PWM and Raspberry Pi 4.
 1. Clone down this repo to your Raspberry Pi
 2. Connect fan +5V/GND to the Raspberry, fan will run at max speed
 3. Connect fan PWM pin to GPIO 18
-4. Run and tweak duty cycles plus temperature thresholds in pi-fan-pwm.py
+4. Run and tweak duty cycles plus temperature thresholds in `pi-fan-pwm.py`
 5. Run `script/install`
 
 That's it!
