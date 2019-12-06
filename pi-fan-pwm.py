@@ -9,6 +9,7 @@ import sys
 def signal_handler(sig, frame):
         tFile.close()
         fFile.close()
+        fan.ChangeDutyCycle(100)
         GPIO.cleanup()
         sys.exit(0)
 
