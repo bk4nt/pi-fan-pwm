@@ -14,6 +14,7 @@
 case "$1" in
   start)
     echo "Starting pi-fan-pwm.py"
+    pkill -f /usr/local/bin/pi-fan-pwm.py
     /usr/local/bin/pi-fan-pwm.py &
     ;;
   stop)
