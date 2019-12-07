@@ -5,6 +5,7 @@ import time
 import signal
 import sys
 
+# Used for tests before install
 def signal_handler(sig, frame):
         tFile.close()
         fFile.close()
@@ -35,6 +36,10 @@ while True:
         # Tweak here minimal dc (PWM Duty Cycle), temp threshold and ratio
         dc = 30 + max(0, int((tempC - 38) * 4.118))
         dc = min(dc, 100)
+
+        dcFile = open('/run/pi-fan-pwm.dc', 'w')
+        dcFile.write(str(dc))
+        dcFile.close
 
         # Uncomment for tests before install
         #print str(tempC) + "C " + str(dc) + "% " + str(freq) + "kHz"
