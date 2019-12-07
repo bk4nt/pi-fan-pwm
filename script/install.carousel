@@ -1,0 +1,18 @@
+#! /bin/sh
+
+set -e
+
+cd "$(dirname "$0")/.."
+
+echo "=> Installing pi-fan-pwm carousel..."
+sudo cp -R luma /usr/local/bin/pi-fan-pwm
+sudo chmod +x /usr/local/bin/pi-fan-pwm/carousel.py
+
+echo "=> Starting pi-fan-pwm..."
+sudo cp pi-fan-pwm.carousel.sh /etc/init.d/
+sudo chmod +x /etc/init.d/pi-fan-pwm.carousel.sh
+
+sudo update-rc.d pi-fan-pwm.carousel.sh defaults
+sudo /etc/init.d/pi-fan-pwm.carousel.sh start
+
+echo "pi-fan-pwm carousel installed."
