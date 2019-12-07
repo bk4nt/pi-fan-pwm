@@ -2,8 +2,8 @@
 
 ### BEGIN INIT INFO
 # Provides:          pi-fan-pwm.py
-# Required-Start:    $remote_fs $syslog
-# Required-Stop:     $remote_fs $syslog
+# Required-Start:    
+# Required-Stop:     
 # Default-Start:     1 2 3 4 5
 # Default-Stop:      0 6
 ### END INIT INFO
