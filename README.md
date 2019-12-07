@@ -14,3 +14,14 @@ Tested with Noctua NF-A4x10 5V PWM and Raspberry Pi 4.
 5. Run `script/install`
 
 That's it!
+
+## Adding luma.oled display scripts
+
+Add a 128x64 OLED display to the Pi SPI port and install luma. See https://github.com/rm-hull/luma.oled
+
+Once the repo cloned, run its carousel.py script (example with the SH1106 driver):
+python ./luma/carousel.py --spi-port 0 --spi-device 0  --display sh1106 --interface spi
+
+pi-fan-pwm.py updates /run/pi-fan-pwm.dc with the fan duty cycle. Data is read and displayed by cpu_state widget.
+
+luma/carousel.py was adapted from https://github.com/rm-hull/luma.examples carousel.py script.
