@@ -23,7 +23,7 @@ Once the repo cloned, run its carousel.py script (example with the SH1106 driver
 
 `python ./luma/carousel.py --spi-port 0 --spi-device 0  --display sh1106 --interface spi`
 
-pi-fan-pwm.py updates /run/pi-fan-pwm.dc with the fan duty cycle. Data is read and displayed by cpu_state widget.
+pi-fan-pwm.py updates /run/pi-fan-pwm.dc with the fan duty cycle. Data is read and displayed by cpustate widget.
 
 For installation:
 1. Adjust `pi-fan-pwm.carousel.sh` content to your display model
