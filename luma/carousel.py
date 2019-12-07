@@ -39,10 +39,13 @@ def pause_every(interval, generator):
         while True:
             x = next(generator)
             if x % interval == 0:
-                time.sleep(2.5)
+                # Widget pause
+                for y in range(50):
+                    time.sleep(0.05)
+                yield x
             else:
                 time.sleep(0.025)
-            yield x
+                yield x
     except StopIteration:
         pass
 
