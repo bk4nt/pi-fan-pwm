@@ -42,7 +42,7 @@ def pause_every(interval, generator):
                 # Widget pause
                 for y in range(50):
                     time.sleep(0.05)
-                yield x
+                    yield x
             else:
                 time.sleep(0.025)
                 yield x
