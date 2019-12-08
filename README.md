@@ -15,7 +15,7 @@ Tested with Noctua NF-A4x10 5V PWM,  Raspberry Pi 4 and common small heatsinks. 
 
 That's it!
 
-## Adding luma.oled display scripts
+## Adding optionnal luma.oled display scripts
 
 Add a 128x64 OLED display to the Pi SPI port and install luma. See https://github.com/rm-hull/luma.oled
 
