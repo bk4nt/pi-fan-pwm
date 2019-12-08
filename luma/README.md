@@ -2,6 +2,6 @@ Adapted from https://github.com/rm-hull/luma.examples carousel.py script.
 
 Mainly :
 - tweaked scrolling/pause speeds addind sleeps
-- added cpustate widget 
-- modded uptime widget (cosmetic)
+- added cpustate widget (CPU temp, CPU speed, FAN duty cycle)
+- modded uptime widget (cosmetic, for seconds plus days up)
 - modded bytes2human in hotspot/common.py (cosmetic)
