@@ -50,13 +50,7 @@ while True:
         outFile = open('/run/pi-fan-pwm.out', 'w')
         outFile.write(str(dc) + " " + str(rpm))
         outFile.close
-
-# Uncomment for tests before install
-#       fFile = open('/sys/devices/system/cpu/cpu0/cpufreq/scaling_cur_freq')
-#       freq = long(fFile.read()) / 1000
-#       fFile.close()
-#       print str(tempC) + "C " + str(dc) + "% " + str(freq) + "kHz " + str(rpm) + "RPM"
-
+        
         tFile = open('/sys/class/thermal/thermal_zone0/temp')
         temp = float(tFile.read())
         tFile.close()
