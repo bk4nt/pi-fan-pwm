@@ -31,6 +31,16 @@ For installation:
 
 luma/carousel.py was adapted from https://github.com/rm-hull/luma.examples carousel.py script.
 
+## SPI bus wiring
+
+GND to GND
+VCC to either 3.3V or 5V (depending on OLED model)
+SCL/SCLK to BCM 11
+SDA/MOSI to BCM 10
+RES(ET) to BCM 25
+DC to BCM 24
+CS to BCM8 (CE0)
+
 ## About FAN_FREQ = 100
 
 According to Intel standards, fan PWM signal shall be 25kHz. But RPi.GPIO currently doesn't support hardware PWM.
