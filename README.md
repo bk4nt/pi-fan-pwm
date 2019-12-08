@@ -19,14 +19,14 @@ That's it!
 
 Add a 128x64 OLED display to the Pi SPI port and install luma. See https://github.com/rm-hull/luma.oled
 
-Once the repo cloned, run its carousel.py script (example with the SH1106 driver):
+Once the repo cloned and luma installed, run carousel.py script (example with the SH1106 driver):
 
 `python ./luma/carousel.py --spi-port 0 --spi-device 0  --display sh1106 --interface spi`
 
 pi-fan-pwm.py updates /run/pi-fan-pwm.out with the fan duty cycle and RPM. Data is read and displayed by cpustate widget.
 
 For installation:
-1. Adjust `pi-fan-pwm.carousel.sh` content to your display model
+1. Adjust `pi-fan-pwm.carousel.sh` content for your display model
 2. Run `script/install.carousel`
 
 luma/carousel.py was adapted from https://github.com/rm-hull/luma.examples carousel.py script.
