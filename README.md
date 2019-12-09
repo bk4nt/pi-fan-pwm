@@ -4,7 +4,7 @@ Scripts used to run a PWM fan according to Raspberry CPU temperature.
 
 Tested with Noctua NF-A4x10 5V PWM,  Raspberry Pi 4 and common small heatsinks.
 
-No extra hardware required, unless maybe a 1N4148 diode between +3.3V(K) and the fan PWM input(A), to protect that GPIO pin.
+No extra hardware required, unless a 1N4148 diode between +3.3V(K) and the fan PWM input(A), to protect that GPIO pin.
 
 At almost no CPU load, fan is silent, runs at 2.5k RPM, and is not much faster/louder for CPU at 100%.
 
