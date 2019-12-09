@@ -49,6 +49,6 @@ luma/carousel.py was adapted from https://github.com/rm-hull/luma.examples carou
 
 According to Intel standards, fan PWM signal shall be 25kHz. But RPi.GPIO currently doesn't support hardware PWM.
 
-At 25kHz, pi-fan-pwm.py eats up to 22% of a CPU core, due to software PWM.
+At 25kHz, pi-fan-pwm.py eats up to 20% of a CPU core, due to software PWM.
 
 But at 100Hz, CPU usage is only less than 1%, and this seems suported by Noctua NF-A4x10 5V fan.
